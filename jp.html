@@ -8,9 +8,17 @@
         .fl{
             float:left;
         }
+        .clearfloat{zoom:1}
+        .clearfloat:after{
+            display:block;
+            clear:both;
+            content:"";
+            visibility:
+                    hidden;
+            height:0}
         .top{
             width:1080px;
-
+            height:240px;
             background: #00BFA3;
             position: relative;
         }
@@ -91,13 +99,13 @@
     <div class="top-wrap clearfloat">
         <div class="left fl">
             <img src="" alt="">
-            返回
+            取消
         </div>
         <div class="title fl">
             物业费缴纳
         </div>
         <div class="right fl">
-            缴费记录
+            完成
         </div>
     </div>
 </div>
@@ -229,3 +237,4 @@
 
 </body>
 </html>
+
