@@ -5,6 +5,52 @@
     <link rel="stylesheet" type="text/css" href="css/a.css"/>
     <script type="text/javascript" src="js/jquery/min.js"></script>
     <style type="text/css">
+        .fl{
+            float:left;
+        }
+        .top{
+            width:1080px;
+
+            background: #00BFA3;
+            position: relative;
+        }
+        .top .top-wrap{
+
+            padding:44px 0;
+            display:flex;
+            align-items:Center;
+            justify-content:center;
+        }
+        .top .left{
+            display:flex;
+            align-items:Center;
+            justify-content:center;
+            width: 252px;
+            font-family: PingFangSC-Regular;
+            font-size: 42px;
+            color: #FFFFFF;
+            letter-spacing: -0.29px;
+        }
+        .top .right{
+            display:flex;
+            align-items:Center;
+            justify-content:center;
+            width: 252px;
+            font-family: PingFangSC-Regular;
+            font-size: 42px;
+            color: #FFFFFF;
+            letter-spacing: -0.29px;
+        }
+        .top .title{
+            display:flex;
+            align-items:Center;
+            justify-content:center;
+            width:576px;
+            font-family: PingFangSC-Medium;
+            font-size: 56px;
+            color: #FFFFFF;
+            letter-spacing: -0.2px;
+        }
         *{ margin: 0; padding: 0; }
 
         body { font: 71%/1.5 Verdana, Sans-Serif; background: #eee; }
@@ -41,10 +87,29 @@
     </style>
 </head>
 <body>
-<div style="width:960px;margin:10px auto; clear:both; text-align:center;">
-
+<div class="top">
+    <div class="top-wrap clearfloat">
+        <div class="left fl">
+            <img src="" alt="">
+            返回
+        </div>
+        <div class="title fl">
+            物业费缴纳
+        </div>
+        <div class="right fl">
+            缴费记录
+        </div>
+    </div>
 </div>
-
+<div>
+    <p>车牌号：</p>
+    <select name="province" >
+        <option value="0">粤</option>
+        <option value="1" >湘</option>
+        <option value="2">豫</option>
+    </select>
+    <input type="text" name="license_number">
+</div>
 <div id="container">
 
     <textarea id="write" rows="6" cols="60"></textarea>
